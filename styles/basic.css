@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+body {
+    background: hsl(225, 100%, 94%);
+    background-image: url(../images/pattern-background-desktop.svg);
+    background-repeat: repeat-x;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.container {
+    max-width: 450px;
+    min-height: auto;
+    border-radius: 20px;
+}
+
+.container, div .cancel button {
+    background-color: hsl(225, 100%, 98%);
+}
+
+.images img {
+    border-radius: 20px 20px 0 0;
+    width: 100%;
+}
+.content, button {
+    font-family: 'Red Hat Display', sans-serif;
+    font-size: 16px;
+    color: hsl(223, 47%, 23%);
+    font-weight: 700;
+    text-align: center;
+}
+.main h2 {
+    font-weight: 900;
+}
+.content p, .price {
+    font-weight: 500;
+    color: hsl(222, 10%, 50%);
+}
+.main {
+    margin: 5% auto;
+    width: 80%;
+}
+
+/* for boxing in the middle including icon, annual plan, and button change */
+.plan, div .proceed button{
+    width: 80%;
+    margin: auto;
+    border-radius: 15px;
+    padding: 3% 5%;
+}
+
+.plan {
+    height: 100px;
+    background-color: hsl(225, 100%, 94%, 40%);
+}
+.plan div {
+    display: inline-block;
+}
+
+/* musice icon inside of box */
+div .icons {
+    float: left;
+    height: 70px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+/* list (anual plan and price) inside of box */
+div .sub {
+    float: left;
+    height: 70px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+div .sub ul {
+    list-style-type: none;
+    margin-left: 20px;
+    padding: 0;
+}
+div .sub ul li {
+    margin-left: 0;
+    padding-left: 0;
+}
+
+/* set up the change button inside of box*/
+div .change {
+    float: right;
+    height: 70px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+div .change button {
+    border: 0;
+    background-color: hsl(225, 100%, 94%, 0%);
+    color: hsl(244, 58%, 35%);
+    text-decoration: underline;
+}
+
+/*clear float for the two button below (proceed to payment button and cancel order) */
+div .proceed, div .cancle {
+    clear: both;
+}
+
+/* for button "proxeed to payment */
+div .proceed,div.cancel {
+    margin-top: 5%;
+}
+
+div .proceed button {
+    background-color: hsl(245, 75%, 52%);
+    color: hsl(195, 100%, 95%);
+    border: 0;
+
+    box-shadow: 0 16px 16px hsl(245, 75%, 52%, 15%);
+}
+
+div .cancel button {
+    padding: 3%;
+    border: 0;
+    color: hsl(220, 20%, 59%);
+    margin-bottom: 10%;
+}
+
+.attribution {
+    display: flex;
+    margin-top: 10%;
+    justify-content: center;
+    width: 100%;
+}
+
+
+/*hover*/
+div .change button:hover {
+    cursor: pointer;
+    color: hsl(246, 48%, 62%);
+    text-decoration: none;
+}
+
+div .proceed button:hover {
+    cursor: pointer;
+    background-color: hsl(245, 83%, 68%);
+    color: white;
+
+    box-shadow: 0 16px 16px hsl(245, 83%, 68%, 15%);
+}
+
+div .cancel button:hover {
+    cursor: pointer;
+    color: hsl(221, 53%, 15%);
+}
